@@ -1,0 +1,81 @@
+{
+  "platform": "react",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "files",
+    "publicDir": "../../public",
+    "publicUrlPrefix": "/static/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "src/components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "g4U16ChXxiyY9kzMDaGd3y",
+      "projectApiToken": "qBOYakRVrUAjM4zNcGQ9w5au9FZEHPtJqOYEPFc6aUUAerApjb9G1s6dyYyrMDiT6x7cOqMF8h5m35Bsugkg",
+      "projectName": "CheckOnMyPlants",
+      "version": "latest",
+      "cssFilePath": "plasmic/check_on_my_plants/plasmic_check_on_my_plants.module.css",
+      "components": [
+        {
+          "id": "rjC68L8_vvXD",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "g4U16ChXxiyY9kzMDaGd3y",
+          "renderModuleFilePath": "plasmic/check_on_my_plants/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "Homepage.tsx"
+          },
+          "cssFilePath": "plasmic/check_on_my_plants/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        }
+      ],
+      "icons": [
+        {
+          "id": "BET84298HuHUt",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/check_on_my_plants/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "YAB4CbqtV0BVX",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/check_on_my_plants/icons/PlasmicIcon__Icon2.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "8tKaEN7exFxaT",
+          "name": "image.png",
+          "filePath": "plasmic/check_on_my_plants/images/imagepng.jpeg"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "codeComponents": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "AXX-2e0C3R4wD",
+        "name": "Screen",
+        "projectId": "g4U16ChXxiyY9kzMDaGd3y",
+        "contextFilePath": "plasmic/check_on_my_plants/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "cliVersion": "0.1.173",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.173/dist/plasmic.schema.json"
+}
