@@ -17,10 +17,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
+  background: #adc178;
+  align-self: auto;
   border-radius: 6px;
   padding: 8px 12px;
-  border: 1px solid #dbdbd7;
+  border: 1px solid #adc178;
 }
 .triggercolor_softPink {
   background: #feeef8;
@@ -37,7 +38,7 @@
   background: none;
 }
 .triggerisOpen {
-  background: #e9e9e6;
+  background: #adc178;
 }
 .triggercolor_softBlue {
   background: #edf6ff;
@@ -64,42 +65,20 @@
   border-color: #ffffff00;
 }
 .root:focus-within .trigger {
-  box-shadow: 0px 0px 0px 3px #96c7f2;
+  box-shadow: none;
   outline: none;
+  border-color: #adc178;
 }
 .root .trigger___focusVisibleWithin {
-  box-shadow: 0px 0px 0px 3px #96c7f2;
+  box-shadow: none;
   outline: none;
-}
-.root .trigger:hover {
-  background: #eeeeec;
-}
-.rootcolor_softPink .triggercolor_softPink:hover {
-  background: #fce5f3;
-}
-.rootcolor_softPurple .triggercolor_softPurple:hover {
-  background: #f3e7fc;
-}
-.rootcolor_softBlue .triggercolor_softBlue:hover {
-  background: #e1f0ff;
-}
-.rootcolor_softCyan .triggercolor_softCyan:hover {
-  background: #d8f3f6;
-}
-.rootcolor_softGreen .triggercolor_softGreen:hover {
-  background: #ddf3e4;
-}
-.rootcolor_softYellow .triggercolor_softYellow:hover {
-  background: #fff8bb;
-}
-.rootcolor_softOrange .triggercolor_softOrange:hover {
-  background: #ffe8d7;
-}
-.rootcolor_softRed .triggercolor_softRed:hover {
-  background: #ffe6e2;
+  border-color: #adc178;
 }
 .root .trigger:active {
   background: #e9e9e6;
+}
+.rootshowPlaceholder .triggershowPlaceholder:active {
+  background: #788c40;
 }
 .rootcolor_softPink .triggercolor_softPink:active {
   background: #f9d8ec;
@@ -139,6 +118,8 @@
 }
 .slotTargetSelectedContent {
   white-space: pre;
+  color: #ffffff;
+  text-align: center;
 }
 .slotTargetSelectedContent > .__wab_text,
 .slotTargetSelectedContent > .__wab_slot-string-wrapper,
@@ -258,6 +239,9 @@
   > picture
   > img {
   overflow: hidden;
+}
+.slotTargetPlaceholdershowPlaceholder {
+  color: #ffffff;
 }
 .slotTargetPlaceholdershowPlaceholder_color_softRed {
   color: #cd2b31;

@@ -194,7 +194,17 @@ function PlasmicSelect__RenderFunc(props: {
               "color",
               "softYellow"
             ),
-            [sty.rootisOpen]: hasVariant(variants, "isOpen", "isOpen")
+            [sty.rootisDisabled]: hasVariant(
+              variants,
+              "isDisabled",
+              "isDisabled"
+            ),
+            [sty.rootisOpen]: hasVariant(variants, "isOpen", "isOpen"),
+            [sty.rootshowPlaceholder]: hasVariant(
+              variants,
+              "showPlaceholder",
+              "showPlaceholder"
+            )
           }
         )}
         data-plasmic-trigger-props={[triggerRootFocusVisibleWithinProps]}
@@ -260,11 +270,16 @@ function PlasmicSelect__RenderFunc(props: {
                 "isDisabled",
                 "isDisabled"
               ),
-              [sty.triggerisOpen]: hasVariant(variants, "isOpen", "isOpen")
+              [sty.triggerisOpen]: hasVariant(variants, "isOpen", "isOpen"),
+              [sty.triggershowPlaceholder]: hasVariant(
+                variants,
+                "showPlaceholder",
+                "showPlaceholder"
+              )
             }
           )}
           disabled={
-            hasVariant(variants, "isDisabled", "isDisabled") ? true : undefined
+            hasVariant(variants, "isDisabled", "isDisabled") ? true : false
           }
         >
           <div

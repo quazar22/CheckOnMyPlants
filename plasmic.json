@@ -110,6 +110,20 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "triggered-overlay"
+        },
+        {
+          "id": "G6yvhwbrKZO",
+          "name": "WateredButton",
+          "type": "managed",
+          "projectId": "g4U16ChXxiyY9kzMDaGd3y",
+          "renderModuleFilePath": "plasmic/check_on_my_plants/PlasmicWateredButton.tsx",
+          "importSpec": {
+            "modulePath": "WateredButton.tsx"
+          },
+          "cssFilePath": "plasmic/check_on_my_plants/PlasmicWateredButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
         }
       ],
       "icons": [
@@ -207,6 +221,11 @@
           "id": "L8mEcY165_jI",
           "name": "Icon28Icon",
           "moduleFilePath": "plasmic/check_on_my_plants/icons/PlasmicIcon__Icon28.tsx"
+        },
+        {
+          "id": "8pQ2njHnaW",
+          "name": "EllipsessvgIcon",
+          "moduleFilePath": "plasmic/check_on_my_plants/icons/PlasmicIcon__Ellipsessvg.tsx"
         }
       ],
       "images": [

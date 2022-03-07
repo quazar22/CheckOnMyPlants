@@ -34,6 +34,7 @@ import {
 import Select from "../../Select"; // plasmic-import: y4GUXOimSgD/component
 import Select__Option from "../../Select__Option"; // plasmic-import: ur6XKUNLcUO/component
 import Button from "../../Button"; // plasmic-import: w8fHD7P1kWE/component
+import WateredButton from "../../WateredButton"; // plasmic-import: G6yvhwbrKZO/component
 
 import { useScreenVariants as useScreenVariantsaxx2E0C3R4WD } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: AXX-2e0C3R4wD/globalVariant
 
@@ -45,7 +46,9 @@ import sty from "./PlasmicHomepage.module.css"; // plasmic-import: rjC68L8_vvXD/
 import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: L6R8sd5oTqa/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: CGRffNbaaHB/icon
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: eUq6eI3Zsph/icon
+import EllipsessvgIcon from "./icons/PlasmicIcon__Ellipsessvg"; // plasmic-import: 8pQ2njHnaW/icon
 import image2119IybKhpFp4 from "./images/image21.svg"; // plasmic-import: 19IybKHPFp4/picture
+import image311As9DxzxSEb from "./images/image31.jpeg"; // plasmic-import: 1AS9DxzxS-eb/picture
 
 export type PlasmicHomepage__VariantMembers = {};
 
@@ -59,9 +62,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
-  img?: p.Flex<typeof p.PlasmicImg>;
-  columns?: p.Flex<"div">;
-  select?: p.Flex<typeof Select>;
+  homeSelector?: p.Flex<typeof Select>;
   h1?: p.Flex<"h1">;
 };
 
@@ -103,420 +104,805 @@ function PlasmicHomepage__RenderFunc(props: {
             "" as const
           )}
         >
-          <p.Stack
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__exQe)}
-          >
+          {true ? (
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__uyAso)}
+              className={classNames(projectcss.all, sty.freeBox__exQe)}
             >
-              <p.PlasmicImg
-                data-plasmic-name={"img"}
-                data-plasmic-override={overrides.img}
-                alt={""}
-                className={classNames(sty.img)}
-                displayHeight={"40px" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"none" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"40px" as const}
-                src={{
-                  src: image2119IybKhpFp4,
-                  fullWidth: 150,
-                  fullHeight: 150,
-                  aspectRatio: 1
-                }}
-              />
-
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__osHx)}
-              >
+              {true ? (
                 <p.Stack
-                  as={"a"}
+                  as={"div"}
                   hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__hOUdK
-                  )}
+                  className={classNames(projectcss.all, sty.freeBox__uyAso)}
                 >
-                  {false ? (
-                    <Icon4Icon
-                      className={classNames(projectcss.all, sty.svg__vWjqG)}
-                      role={"img"}
-                    />
-                  ) : null}
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__yphUb
-                    )}
-                  >
-                    {"Services"}
-                  </div>
-
-                  {false ? (
-                    <Icon4Icon
-                      className={classNames(projectcss.all, sty.svg__zgSzQ)}
-                      role={"img"}
-                    />
-                  ) : null}
-                </p.Stack>
-
-                <p.Stack
-                  as={"a"}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__rwd3G
-                  )}
-                >
-                  {false ? (
-                    <Icon4Icon
-                      className={classNames(projectcss.all, sty.svg___9P3Xf)}
-                      role={"img"}
-                    />
-                  ) : null}
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__mp5DV
-                    )}
-                  >
-                    {"Features"}
-                  </div>
-
-                  {false ? (
-                    <Icon4Icon
-                      className={classNames(projectcss.all, sty.svg__mD3B1)}
-                      role={"img"}
-                    />
-                  ) : null}
-                </p.Stack>
-
-                <p.Stack
-                  as={"a"}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__q1USj
-                  )}
-                >
-                  {false ? (
-                    <Icon4Icon
-                      className={classNames(projectcss.all, sty.svg___18GpF)}
-                      role={"img"}
-                    />
-                  ) : null}
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__xG4E8
-                    )}
-                  >
-                    {"Company"}
-                  </div>
-
-                  {false ? (
-                    <Icon4Icon
-                      className={classNames(projectcss.all, sty.svg__qZ9O7)}
-                      role={"img"}
-                    />
-                  ) : null}
-                </p.Stack>
-
-                <p.Stack
-                  as={"a"}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__ohwcy
-                  )}
-                >
-                  {false ? (
-                    <Icon4Icon
-                      className={classNames(projectcss.all, sty.svg___9Bl3U)}
-                      role={"img"}
-                    />
-                  ) : null}
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__dU5Q9
-                    )}
-                  >
-                    {"Contact"}
-                  </div>
-
-                  {false ? (
-                    <Icon4Icon
-                      className={classNames(projectcss.all, sty.svg__fsp30)}
-                      role={"img"}
-                    />
-                  ) : null}
-                </p.Stack>
-
-                <p.Stack
-                  as={"a"}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__y7Zfk
-                  )}
-                >
-                  {false ? (
-                    <Icon4Icon
-                      className={classNames(projectcss.all, sty.svg__aNlt)}
-                      role={"img"}
-                    />
-                  ) : null}
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___8359T
-                    )}
-                  >
-                    {"Log in"}
-                  </div>
-
-                  {false ? (
-                    <Icon4Icon
-                      className={classNames(projectcss.all, sty.svg__xfxlt)}
-                      role={"img"}
-                    />
-                  ) : null}
-                </p.Stack>
-
-                <p.Stack
-                  as={"a"}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__raP0B
-                  )}
-                >
-                  {false ? (
-                    <Icon4Icon
-                      className={classNames(projectcss.all, sty.svg___9ZLlW)}
-                      role={"img"}
-                    />
-                  ) : null}
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__l93Bn
-                    )}
-                  >
-                    {"Sign up"}
-                  </div>
-
-                  {false ? (
-                    <Icon4Icon
-                      className={classNames(projectcss.all, sty.svg__ioThd)}
-                      role={"img"}
-                    />
-                  ) : null}
-                </p.Stack>
-              </p.Stack>
-
-              {false ? (
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___7RzqH)}
-                >
-                  <button
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.button,
-                      projectcss.__wab_text,
-                      sty.button__fdaQo
-                    )}
-                  >
-                    {"Sign up"}
-                  </button>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__yjkeR)}
+                    displayHeight={"40px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"none" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"40px" as const}
+                    src={{
+                      src: image2119IybKhpFp4,
+                      fullWidth: 150,
+                      fullHeight: 150,
+                      aspectRatio: 1
+                    }}
+                  />
 
                   <p.Stack
-                    as={"a"}
+                    as={"div"}
                     hasGap={true}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link__fQn4J
-                    )}
+                    className={classNames(projectcss.all, sty.freeBox__osHx)}
                   >
-                    {false ? (
-                      <Icon4Icon
-                        className={classNames(projectcss.all, sty.svg__d4QnM)}
-                        role={"img"}
-                      />
-                    ) : null}
+                    <p.Stack
+                      as={"a"}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__hOUdK
+                      )}
+                    >
+                      {false ? (
+                        <Icon4Icon
+                          className={classNames(projectcss.all, sty.svg__vWjqG)}
+                          role={"img"}
+                        />
+                      ) : null}
 
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__yphUb
+                        )}
+                      >
+                        {"Services"}
+                      </div>
+
+                      {false ? (
+                        <Icon4Icon
+                          className={classNames(projectcss.all, sty.svg__zgSzQ)}
+                          role={"img"}
+                        />
+                      ) : null}
+                    </p.Stack>
+
+                    <p.Stack
+                      as={"a"}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__rwd3G
+                      )}
+                    >
+                      {false ? (
+                        <Icon4Icon
+                          className={classNames(
+                            projectcss.all,
+                            sty.svg___9P3Xf
+                          )}
+                          role={"img"}
+                        />
+                      ) : null}
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__mp5DV
+                        )}
+                      >
+                        {"Features"}
+                      </div>
+
+                      {false ? (
+                        <Icon4Icon
+                          className={classNames(projectcss.all, sty.svg__mD3B1)}
+                          role={"img"}
+                        />
+                      ) : null}
+                    </p.Stack>
+
+                    <p.Stack
+                      as={"a"}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__q1USj
+                      )}
+                    >
+                      {false ? (
+                        <Icon4Icon
+                          className={classNames(
+                            projectcss.all,
+                            sty.svg___18GpF
+                          )}
+                          role={"img"}
+                        />
+                      ) : null}
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__xG4E8
+                        )}
+                      >
+                        {"Company"}
+                      </div>
+
+                      {false ? (
+                        <Icon4Icon
+                          className={classNames(projectcss.all, sty.svg__qZ9O7)}
+                          role={"img"}
+                        />
+                      ) : null}
+                    </p.Stack>
+
+                    <p.Stack
+                      as={"a"}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__ohwcy
+                      )}
+                    >
+                      {false ? (
+                        <Icon4Icon
+                          className={classNames(
+                            projectcss.all,
+                            sty.svg___9Bl3U
+                          )}
+                          role={"img"}
+                        />
+                      ) : null}
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__dU5Q9
+                        )}
+                      >
+                        {"Contact"}
+                      </div>
+
+                      {false ? (
+                        <Icon4Icon
+                          className={classNames(projectcss.all, sty.svg__fsp30)}
+                          role={"img"}
+                        />
+                      ) : null}
+                    </p.Stack>
+
+                    <p.Stack
+                      as={"a"}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__y7Zfk
+                      )}
+                    >
+                      {false ? (
+                        <Icon4Icon
+                          className={classNames(projectcss.all, sty.svg__aNlt)}
+                          role={"img"}
+                        />
+                      ) : null}
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___8359T
+                        )}
+                      >
+                        {"Log in"}
+                      </div>
+
+                      {false ? (
+                        <Icon4Icon
+                          className={classNames(projectcss.all, sty.svg__xfxlt)}
+                          role={"img"}
+                        />
+                      ) : null}
+                    </p.Stack>
+
+                    <p.Stack
+                      as={"a"}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__raP0B
+                      )}
+                    >
+                      {false ? (
+                        <Icon4Icon
+                          className={classNames(
+                            projectcss.all,
+                            sty.svg___9ZLlW
+                          )}
+                          role={"img"}
+                        />
+                      ) : null}
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__l93Bn
+                        )}
+                      >
+                        {"Sign up"}
+                      </div>
+
+                      {false ? (
+                        <Icon4Icon
+                          className={classNames(projectcss.all, sty.svg__ioThd)}
+                          role={"img"}
+                        />
+                      ) : null}
+                    </p.Stack>
+                  </p.Stack>
+
+                  {false ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___7RzqH
+                      )}
+                    >
+                      <button
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.button,
+                          projectcss.__wab_text,
+                          sty.button__fdaQo
+                        )}
+                      >
+                        {"Sign up"}
+                      </button>
+
+                      <p.Stack
+                        as={"a"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__fQn4J
+                        )}
+                      >
+                        {false ? (
+                          <Icon4Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__d4QnM
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__aG85B
+                          )}
+                        >
+                          {"Log in"}
+                        </div>
+
+                        {false ? (
+                          <Icon4Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__r8HmD
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                      </p.Stack>
+                    </div>
+                  ) : null}
+                </p.Stack>
+              ) : null}
+            </p.Stack>
+          ) : null}
+          {true ? (
+            <div className={classNames(projectcss.all, sty.columns__vhGnd)}>
+              <div className={classNames(projectcss.all, sty.column___28Y0I)}>
+                <Select
+                  data-plasmic-name={"homeSelector"}
+                  data-plasmic-override={overrides.homeSelector}
+                  className={classNames("__wab_instance", sty.homeSelector)}
+                  placeholder={
+                    true ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__hnzzP
+                        )}
+                      >
+                        {"Homes"}
+                      </div>
+                    ) : null
+                  }
+                  selectedContent={
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__aG85B
+                        sty.text___795Vc
                       )}
                     >
-                      {"Log in"}
+                      {"Selected"}
+                    </div>
+                  }
+                >
+                  {true ? (
+                    <Select__Option
+                      className={classNames(
+                        "__wab_instance",
+                        sty.option__anaTp
+                      )}
+                      value={"value1" as const}
+                    >
+                      {"Option 1"}
+                    </Select__Option>
+                  ) : null}
+
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option__lfYf7)}
+                    value={"value2" as const}
+                  >
+                    {"Option 2"}
+                  </Select__Option>
+                </Select>
+              </div>
+
+              <div className={classNames(projectcss.all, sty.column___6Hvfj)}>
+                <Button
+                  className={classNames("__wab_instance", sty.button__ypP9X)}
+                >
+                  {"Add Plant"}
+                </Button>
+              </div>
+
+              <div className={classNames(projectcss.all, sty.column__yZvrI)}>
+                <Button
+                  className={classNames("__wab_instance", sty.button__e6E5W)}
+                >
+                  {"Order by"}
+                </Button>
+              </div>
+
+              <div className={classNames(projectcss.all, sty.column___9DAKl)}>
+                <Button
+                  className={classNames("__wab_instance", sty.button__sxGxh)}
+                >
+                  {"Filter"}
+                </Button>
+              </div>
+            </div>
+          ) : null}
+
+          <div className={classNames(projectcss.all, sty.freeBox__l8Ik)}>
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.columns__zZvUe)}
+              >
+                <div className={classNames(projectcss.all, sty.column__q8HQx)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img___1G0Kl)}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? ("100%" as const)
+                        : ("100%" as const)
+                    }
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"100%" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: image311As9DxzxSEb,
+                      fullWidth: 1280,
+                      fullHeight: 853,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+
+                <div className={classNames(projectcss.all, sty.column__fwXy8)}>
+                  <div
+                    className={classNames(projectcss.all, sty.columns__jrEuV)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.column__wYcn)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__vFp9O
+                        )}
+                      >
+                        {"Plant #1"}
+                      </div>
                     </div>
 
-                    {false ? (
-                      <Icon4Icon
-                        className={classNames(projectcss.all, sty.svg__r8HmD)}
-                        role={"img"}
-                      />
+                    {(
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.column__fssmh
+                        )}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text___0XgJh
+                            )}
+                          >
+                            {"Every 22 days"}
+                          </div>
+                        ) : null}
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__f2T4K
+                            )}
+                          >
+                            {"4 days left"}
+                          </div>
+                        ) : null}
+                      </div>
                     ) : null}
-                  </p.Stack>
+                  </div>
                 </div>
-              ) : null}
-            </p.Stack>
-          </p.Stack>
 
-          <div
-            data-plasmic-name={"columns"}
-            data-plasmic-override={overrides.columns}
-            className={classNames(projectcss.all, sty.columns)}
-          >
-            <div className={classNames(projectcss.all, sty.column___28Y0I)}>
-              <Select
-                data-plasmic-name={"select"}
-                data-plasmic-override={overrides.select}
-                className={classNames("__wab_instance", sty.select)}
+                <div className={classNames(projectcss.all, sty.column__jtbHs)}>
+                  <WateredButton
+                    className={classNames(
+                      "__wab_instance",
+                      sty.wateredButton__j1LZw
+                    )}
+                  />
+                </div>
+
+                <div className={classNames(projectcss.all, sty.column__fuQOb)}>
+                  <EllipsessvgIcon
+                    className={classNames(projectcss.all, sty.svg___2Ns0Q)}
+                    role={"img"}
+                  />
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.columns__dckob)}
               >
-                {true ? (
-                  <Select__Option
-                    className={classNames("__wab_instance", sty.option__anaTp)}
-                    value={"value1" as const}
+                <div className={classNames(projectcss.all, sty.column__qaVw)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__jxJrV)}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? ("100%" as const)
+                        : ("100%" as const)
+                    }
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"100%" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: image311As9DxzxSEb,
+                      fullWidth: 1280,
+                      fullHeight: 853,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+
+                <div className={classNames(projectcss.all, sty.column__nwJdi)}>
+                  <div
+                    className={classNames(projectcss.all, sty.columns__qlXyf)}
                   >
-                    {"Option 1"}
-                  </Select__Option>
-                ) : null}
+                    <div
+                      className={classNames(projectcss.all, sty.column__fUPb)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__mq2YA
+                        )}
+                      >
+                        {"Plant #1"}
+                      </div>
+                    </div>
 
-                <Select__Option
-                  className={classNames("__wab_instance", sty.option__lfYf7)}
-                  value={"value2" as const}
+                    {(
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.column__nlcVt
+                        )}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__jmbvb
+                            )}
+                          >
+                            {"Every 22 days"}
+                          </div>
+                        ) : null}
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__piEnZ
+                            )}
+                          >
+                            {"4 days left"}
+                          </div>
+                        ) : null}
+                      </div>
+                    ) : null}
+                  </div>
+                </div>
+
+                <div className={classNames(projectcss.all, sty.column__p5P5F)}>
+                  <WateredButton
+                    className={classNames(
+                      "__wab_instance",
+                      sty.wateredButton__nTtW
+                    )}
+                  />
+                </div>
+
+                <div className={classNames(projectcss.all, sty.column__w1HW)}>
+                  <EllipsessvgIcon
+                    className={classNames(projectcss.all, sty.svg___9HtZo)}
+                    role={"img"}
+                  />
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.columns__yJQpE)}
+              >
+                <div className={classNames(projectcss.all, sty.column___0E8Le)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__oOEyW)}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? ("100%" as const)
+                        : ("100%" as const)
+                    }
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"100%" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: image311As9DxzxSEb,
+                      fullWidth: 1280,
+                      fullHeight: 853,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+
+                <div className={classNames(projectcss.all, sty.column__zddaP)}>
+                  <div
+                    className={classNames(projectcss.all, sty.columns___3Gmo8)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.column__quwQv)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__ly00O
+                        )}
+                      >
+                        {"Plant #1"}
+                      </div>
+                    </div>
+
+                    {(
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.column__xAaIs
+                        )}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__xDulx
+                            )}
+                          >
+                            {"Every 22 days"}
+                          </div>
+                        ) : null}
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__c8UtX
+                            )}
+                          >
+                            {"4 days left"}
+                          </div>
+                        ) : null}
+                      </div>
+                    ) : null}
+                  </div>
+                </div>
+
+                <div className={classNames(projectcss.all, sty.column__kbbt6)}>
+                  <WateredButton
+                    className={classNames(
+                      "__wab_instance",
+                      sty.wateredButton___4T7J8
+                    )}
+                  />
+                </div>
+
+                <div className={classNames(projectcss.all, sty.column__x9Y3C)}>
+                  <EllipsessvgIcon
+                    className={classNames(projectcss.all, sty.svg__oMiXy)}
+                    role={"img"}
+                  />
+                </div>
+              </p.Stack>
+            ) : null}
+          </div>
+
+          {true ? (
+            <h1
+              data-plasmic-name={"h1"}
+              data-plasmic-override={overrides.h1}
+              className={classNames(
+                projectcss.all,
+                projectcss.h1,
+                projectcss.__wab_text,
+                sty.h1
+              )}
+            >
+              {"Welcome to your first pages."}
+            </h1>
+          ) : null}
+          {true ? (
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__tpLc2
+              )}
+            >
+              <React.Fragment>
+                <React.Fragment>
+                  {
+                    "If you haven't already done so, go back and learn the basics by going through the Plasmic Levels tutorial.\n\nIt's always easier to start from examples! Add a new page using a template—do this from the list of pages in the top left (the gray + button).\n\nOr press the big blue + button to start dragging items into this page.\n\nIntegrate this project into your codebase—press the "
+                  }
+                </React.Fragment>
+                <span
+                  className={"plasmic_default__all plasmic_default__span"}
+                  style={{ fontWeight: 700 }}
                 >
-                  {"Option 2"}
-                </Select__Option>
-              </Select>
-            </div>
-
-            <div className={classNames(projectcss.all, sty.column___6Hvfj)}>
-              <Button
-                className={classNames("__wab_instance", sty.button__ypP9X)}
-              >
-                {"Add Plant"}
-              </Button>
-            </div>
-
-            <div className={classNames(projectcss.all, sty.column___9DAKl)}>
-              <Button
-                className={classNames("__wab_instance", sty.button__sxGxh)}
-              >
-                {"Filter"}
-              </Button>
-            </div>
-
-            <div className={classNames(projectcss.all, sty.column__yZvrI)}>
-              <Button
-                className={classNames("__wab_instance", sty.button__e6E5W)}
-              >
-                {"Order by"}
-              </Button>
-            </div>
-          </div>
-
-          <div className={classNames(projectcss.all, sty.freeBox___2Puik)} />
-
-          <h1
-            data-plasmic-name={"h1"}
-            data-plasmic-override={overrides.h1}
-            className={classNames(
-              projectcss.all,
-              projectcss.h1,
-              projectcss.__wab_text,
-              sty.h1
-            )}
-          >
-            {"Welcome to your first pages."}
-          </h1>
-
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__tpLc2
-            )}
-          >
-            <React.Fragment>
-              <React.Fragment>
-                {
-                  "If you haven't already done so, go back and learn the basics by going through the Plasmic Levels tutorial.\n\nIt's always easier to start from examples! Add a new page using a template—do this from the list of pages in the top left (the gray + button).\n\nOr press the big blue + button to start dragging items into this page.\n\nIntegrate this project into your codebase—press the "
-                }
+                  {"Code"}
+                </span>
+                <React.Fragment>
+                  {
+                    " button in the top right and follow the quickstart instructions.\n\nJoin our Slack community (icon in bottom left) for help any time."
+                  }
+                </React.Fragment>
               </React.Fragment>
-              <span
-                className={"plasmic_default__all plasmic_default__span"}
-                style={{ fontWeight: 700 }}
-              >
-                {"Code"}
-              </span>
+            </div>
+          ) : null}
+          {true ? (
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__nqEi
+              )}
+            >
               <React.Fragment>
-                {
-                  " button in the top right and follow the quickstart instructions.\n\nJoin our Slack community (icon in bottom left) for help any time."
-                }
+                <React.Fragment>
+                  {
+                    "If you haven't already done so, go back and learn the basics by going through the Plasmic Levels tutorial.\n\nIt's always easier to start from examples! Add a new page using a template—do this from the list of pages in the top left (the gray + button).\n\nOr press the big blue + button to start dragging items into this page.\n\nIntegrate this project into your codebase—press the "
+                  }
+                </React.Fragment>
+                <span
+                  className={"plasmic_default__all plasmic_default__span"}
+                  style={{ fontWeight: 700 }}
+                >
+                  {"Code"}
+                </span>
+                <React.Fragment>
+                  {
+                    " button in the top right and follow the quickstart instructions.\n\nJoin our Slack community (icon in bottom left) for help any time."
+                  }
+                </React.Fragment>
               </React.Fragment>
-            </React.Fragment>
-          </div>
-
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__nqEi
-            )}
-          >
-            <React.Fragment>
-              <React.Fragment>
-                {
-                  "If you haven't already done so, go back and learn the basics by going through the Plasmic Levels tutorial.\n\nIt's always easier to start from examples! Add a new page using a template—do this from the list of pages in the top left (the gray + button).\n\nOr press the big blue + button to start dragging items into this page.\n\nIntegrate this project into your codebase—press the "
-                }
-              </React.Fragment>
-              <span
-                className={"plasmic_default__all plasmic_default__span"}
-                style={{ fontWeight: 700 }}
-              >
-                {"Code"}
-              </span>
-              <React.Fragment>
-                {
-                  " button in the top right and follow the quickstart instructions.\n\nJoin our Slack community (icon in bottom left) for help any time."
-                }
-              </React.Fragment>
-            </React.Fragment>
-          </div>
+            </div>
+          ) : null}
         </p.Stack>
       </div>
     </React.Fragment>
@@ -524,10 +910,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img", "columns", "select", "h1"],
-  img: ["img"],
-  columns: ["columns", "select"],
-  select: ["select"],
+  root: ["root", "homeSelector", "h1"],
+  homeSelector: ["homeSelector"],
   h1: ["h1"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -535,9 +919,7 @@ type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  img: typeof p.PlasmicImg;
-  columns: "div";
-  select: typeof Select;
+  homeSelector: typeof Select;
   h1: "h1";
 };
 
@@ -598,9 +980,7 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    img: makeNodeComponent("img"),
-    columns: makeNodeComponent("columns"),
-    select: makeNodeComponent("select"),
+    homeSelector: makeNodeComponent("homeSelector"),
     h1: makeNodeComponent("h1"),
 
     // Metadata about props expected for PlasmicHomepage
