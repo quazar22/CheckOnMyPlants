@@ -31,11 +31,21 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import Select from "../../Select"; // plasmic-import: y4GUXOimSgD/component
+import Select__Option from "../../Select__Option"; // plasmic-import: ur6XKUNLcUO/component
+import Button from "../../Button"; // plasmic-import: w8fHD7P1kWE/component
+
+import { useScreenVariants as useScreenVariantsaxx2E0C3R4WD } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: AXX-2e0C3R4wD/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_check_on_my_plants.module.css"; // plasmic-import: g4U16ChXxiyY9kzMDaGd3y/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: rjC68L8_vvXD/css
+
+import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: L6R8sd5oTqa/icon
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: CGRffNbaaHB/icon
+import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: eUq6eI3Zsph/icon
+import image2119IybKhpFp4 from "./images/image21.svg"; // plasmic-import: 19IybKHPFp4/picture
 
 export type PlasmicHomepage__VariantMembers = {};
 
@@ -49,8 +59,10 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
+  img?: p.Flex<typeof p.PlasmicImg>;
+  columns?: p.Flex<"div">;
+  select?: p.Flex<typeof Select>;
   h1?: p.Flex<"h1">;
-  text?: p.Flex<"div">;
 };
 
 export interface DefaultHomepageProps {
@@ -65,6 +77,10 @@ function PlasmicHomepage__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, args, overrides, forNode } = props;
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsaxx2E0C3R4WD()
+  });
 
   return (
     <React.Fragment>
@@ -83,9 +99,358 @@ function PlasmicHomepage__RenderFunc(props: {
             projectcss.all,
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
-            sty.root
+            sty.root,
+            "" as const
           )}
         >
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__exQe)}
+          >
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__uyAso)}
+            >
+              <p.PlasmicImg
+                data-plasmic-name={"img"}
+                data-plasmic-override={overrides.img}
+                alt={""}
+                className={classNames(sty.img)}
+                displayHeight={"40px" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"none" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"40px" as const}
+                src={{
+                  src: image2119IybKhpFp4,
+                  fullWidth: 150,
+                  fullHeight: 150,
+                  aspectRatio: 1
+                }}
+              />
+
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__osHx)}
+              >
+                <p.Stack
+                  as={"a"}
+                  hasGap={true}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__hOUdK
+                  )}
+                >
+                  {false ? (
+                    <Icon4Icon
+                      className={classNames(projectcss.all, sty.svg__vWjqG)}
+                      role={"img"}
+                    />
+                  ) : null}
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__yphUb
+                    )}
+                  >
+                    {"Services"}
+                  </div>
+
+                  {false ? (
+                    <Icon4Icon
+                      className={classNames(projectcss.all, sty.svg__zgSzQ)}
+                      role={"img"}
+                    />
+                  ) : null}
+                </p.Stack>
+
+                <p.Stack
+                  as={"a"}
+                  hasGap={true}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__rwd3G
+                  )}
+                >
+                  {false ? (
+                    <Icon4Icon
+                      className={classNames(projectcss.all, sty.svg___9P3Xf)}
+                      role={"img"}
+                    />
+                  ) : null}
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__mp5DV
+                    )}
+                  >
+                    {"Features"}
+                  </div>
+
+                  {false ? (
+                    <Icon4Icon
+                      className={classNames(projectcss.all, sty.svg__mD3B1)}
+                      role={"img"}
+                    />
+                  ) : null}
+                </p.Stack>
+
+                <p.Stack
+                  as={"a"}
+                  hasGap={true}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__q1USj
+                  )}
+                >
+                  {false ? (
+                    <Icon4Icon
+                      className={classNames(projectcss.all, sty.svg___18GpF)}
+                      role={"img"}
+                    />
+                  ) : null}
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__xG4E8
+                    )}
+                  >
+                    {"Company"}
+                  </div>
+
+                  {false ? (
+                    <Icon4Icon
+                      className={classNames(projectcss.all, sty.svg__qZ9O7)}
+                      role={"img"}
+                    />
+                  ) : null}
+                </p.Stack>
+
+                <p.Stack
+                  as={"a"}
+                  hasGap={true}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__ohwcy
+                  )}
+                >
+                  {false ? (
+                    <Icon4Icon
+                      className={classNames(projectcss.all, sty.svg___9Bl3U)}
+                      role={"img"}
+                    />
+                  ) : null}
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__dU5Q9
+                    )}
+                  >
+                    {"Contact"}
+                  </div>
+
+                  {false ? (
+                    <Icon4Icon
+                      className={classNames(projectcss.all, sty.svg__fsp30)}
+                      role={"img"}
+                    />
+                  ) : null}
+                </p.Stack>
+
+                <p.Stack
+                  as={"a"}
+                  hasGap={true}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__y7Zfk
+                  )}
+                >
+                  {false ? (
+                    <Icon4Icon
+                      className={classNames(projectcss.all, sty.svg__aNlt)}
+                      role={"img"}
+                    />
+                  ) : null}
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___8359T
+                    )}
+                  >
+                    {"Log in"}
+                  </div>
+
+                  {false ? (
+                    <Icon4Icon
+                      className={classNames(projectcss.all, sty.svg__xfxlt)}
+                      role={"img"}
+                    />
+                  ) : null}
+                </p.Stack>
+
+                <p.Stack
+                  as={"a"}
+                  hasGap={true}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__raP0B
+                  )}
+                >
+                  {false ? (
+                    <Icon4Icon
+                      className={classNames(projectcss.all, sty.svg___9ZLlW)}
+                      role={"img"}
+                    />
+                  ) : null}
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__l93Bn
+                    )}
+                  >
+                    {"Sign up"}
+                  </div>
+
+                  {false ? (
+                    <Icon4Icon
+                      className={classNames(projectcss.all, sty.svg__ioThd)}
+                      role={"img"}
+                    />
+                  ) : null}
+                </p.Stack>
+              </p.Stack>
+
+              {false ? (
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___7RzqH)}
+                >
+                  <button
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.button,
+                      projectcss.__wab_text,
+                      sty.button__fdaQo
+                    )}
+                  >
+                    {"Sign up"}
+                  </button>
+
+                  <p.Stack
+                    as={"a"}
+                    hasGap={true}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__fQn4J
+                    )}
+                  >
+                    {false ? (
+                      <Icon4Icon
+                        className={classNames(projectcss.all, sty.svg__d4QnM)}
+                        role={"img"}
+                      />
+                    ) : null}
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__aG85B
+                      )}
+                    >
+                      {"Log in"}
+                    </div>
+
+                    {false ? (
+                      <Icon4Icon
+                        className={classNames(projectcss.all, sty.svg__r8HmD)}
+                        role={"img"}
+                      />
+                    ) : null}
+                  </p.Stack>
+                </div>
+              ) : null}
+            </p.Stack>
+          </p.Stack>
+
+          <div
+            data-plasmic-name={"columns"}
+            data-plasmic-override={overrides.columns}
+            className={classNames(projectcss.all, sty.columns)}
+          >
+            <div className={classNames(projectcss.all, sty.column___28Y0I)}>
+              <Select
+                data-plasmic-name={"select"}
+                data-plasmic-override={overrides.select}
+                className={classNames("__wab_instance", sty.select)}
+              >
+                {true ? (
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option__anaTp)}
+                    value={"value1" as const}
+                  >
+                    {"Option 1"}
+                  </Select__Option>
+                ) : null}
+
+                <Select__Option
+                  className={classNames("__wab_instance", sty.option__lfYf7)}
+                  value={"value2" as const}
+                >
+                  {"Option 2"}
+                </Select__Option>
+              </Select>
+            </div>
+
+            <div className={classNames(projectcss.all, sty.column___6Hvfj)}>
+              <Button
+                className={classNames("__wab_instance", sty.button__ypP9X)}
+              >
+                {"Add Plant"}
+              </Button>
+            </div>
+
+            <div className={classNames(projectcss.all, sty.column___9DAKl)}>
+              <Button
+                className={classNames("__wab_instance", sty.button__sxGxh)}
+              >
+                {"Filter"}
+              </Button>
+            </div>
+
+            <div className={classNames(projectcss.all, sty.column__yZvrI)}>
+              <Button
+                className={classNames("__wab_instance", sty.button__e6E5W)}
+              >
+                {"Order by"}
+              </Button>
+            </div>
+          </div>
+
+          <div className={classNames(projectcss.all, sty.freeBox___2Puik)} />
+
           <h1
             data-plasmic-name={"h1"}
             data-plasmic-override={overrides.h1}
@@ -96,16 +461,41 @@ function PlasmicHomepage__RenderFunc(props: {
               sty.h1
             )}
           >
-            {"Welcome to your first page."}
+            {"Welcome to your first pages."}
           </h1>
 
           <div
-            data-plasmic-name={"text"}
-            data-plasmic-override={overrides.text}
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
-              sty.text
+              sty.text__tpLc2
+            )}
+          >
+            <React.Fragment>
+              <React.Fragment>
+                {
+                  "If you haven't already done so, go back and learn the basics by going through the Plasmic Levels tutorial.\n\nIt's always easier to start from examples! Add a new page using a template—do this from the list of pages in the top left (the gray + button).\n\nOr press the big blue + button to start dragging items into this page.\n\nIntegrate this project into your codebase—press the "
+                }
+              </React.Fragment>
+              <span
+                className={"plasmic_default__all plasmic_default__span"}
+                style={{ fontWeight: 700 }}
+              >
+                {"Code"}
+              </span>
+              <React.Fragment>
+                {
+                  " button in the top right and follow the quickstart instructions.\n\nJoin our Slack community (icon in bottom left) for help any time."
+                }
+              </React.Fragment>
+            </React.Fragment>
+          </div>
+
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__nqEi
             )}
           >
             <React.Fragment>
@@ -134,17 +524,21 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "h1", "text"],
-  h1: ["h1"],
-  text: ["text"]
+  root: ["root", "img", "columns", "select", "h1"],
+  img: ["img"],
+  columns: ["columns", "select"],
+  select: ["select"],
+  h1: ["h1"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  img: typeof p.PlasmicImg;
+  columns: "div";
+  select: typeof Select;
   h1: "h1";
-  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -204,8 +598,10 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    img: makeNodeComponent("img"),
+    columns: makeNodeComponent("columns"),
+    select: makeNodeComponent("select"),
     h1: makeNodeComponent("h1"),
-    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

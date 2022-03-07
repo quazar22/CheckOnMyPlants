@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C900&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C900&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C900&display=swap");
 
 .plasmic_default_styles {
   --mixin-qhfdCWd1g7Mm_font-family: "Inter";
   --mixin-qhfdCWd1g7Mm_font-size: 16px;
   --mixin-qhfdCWd1g7Mm_font-weight: 400;
   --mixin-qhfdCWd1g7Mm_font-style: normal;
-  --mixin-qhfdCWd1g7Mm_color: #535353;
+  --mixin-qhfdCWd1g7Mm_color: #adc178;
   --mixin-qhfdCWd1g7Mm_text-align: left;
   --mixin-qhfdCWd1g7Mm_text-transform: none;
   --mixin-qhfdCWd1g7Mm_line-height: 1.5;
