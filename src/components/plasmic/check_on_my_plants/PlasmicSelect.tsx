@@ -510,7 +510,7 @@ function PlasmicSelect__RenderFunc(props: {
           />
         </button>
 
-        {(hasVariant(variants, "isOpen", "isOpen") ? true : false) ? (
+        {(hasVariant(variants, "isOpen", "isOpen") ? true : true) ? (
           <Select__Overlay
             data-plasmic-name={"overlay"}
             data-plasmic-override={overrides.overlay}

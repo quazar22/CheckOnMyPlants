@@ -353,7 +353,7 @@ function PlasmicWateredButton__RenderFunc(props: {
         })}
       >
         {p.renderPlasmicSlot({
-          defaultContents: "Watered",
+          defaultContents: "Water",
           value: args.children,
           className: classNames(sty.slotTargetChildren, {
             [sty.slotTargetChildren___focusVisibleWithin]:

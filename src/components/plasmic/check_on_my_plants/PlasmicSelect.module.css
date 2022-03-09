@@ -2,6 +2,12 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  cursor: pointer;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    cursor: default;
+  }
 }
 .rootcolor_softGreen {
   border-color: #ffffff00;
@@ -16,12 +22,19 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background: #adc178;
   align-self: auto;
+  cursor: pointer;
   border-radius: 6px;
-  padding: 8px 12px;
-  border: 1px solid #adc178;
+  padding: 9px 16px;
+  border-width: 0px;
+  border-style: none;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .trigger {
+    cursor: default;
+  }
 }
 .triggercolor_softPink {
   background: #feeef8;
@@ -270,9 +283,9 @@
 .dropdownIcon {
   position: relative;
   object-fit: cover;
-  width: 20px;
-  height: 20px;
-  color: #90908c;
+  width: 30px;
+  height: 30px;
+  color: #f0ead2;
   flex-shrink: 0;
 }
 .dropdownIconcolor_softPink {
@@ -310,6 +323,7 @@
   left: 0px;
   top: 100%;
   z-index: 1000;
+  display: none;
 }
 .optionsContainer {
   display: flex;

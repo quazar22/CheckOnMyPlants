@@ -219,6 +219,7 @@
   flex-direction: row;
   align-items: stretch;
   justify-content: flex-start;
+  pointer-events: none;
 }
 .root .contentContainer___focusVisibleWithin {
   outline: none;
