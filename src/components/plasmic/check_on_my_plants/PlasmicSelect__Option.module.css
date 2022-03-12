@@ -3,7 +3,8 @@
   flex-direction: row;
   position: relative;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  background: #adc178;
   padding: 8px 16px;
 }
 .rootisSelected {
@@ -21,6 +22,7 @@
 }
 .slotTargetChildren {
   white-space: pre;
+  color: #f0ead2;
 }
 .slotTargetChildren > .__wab_text,
 .slotTargetChildren > .__wab_slot-string-wrapper,

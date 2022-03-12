@@ -2,12 +2,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  cursor: pointer;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .root {
-    cursor: default;
-  }
+  background: none;
 }
 .rootcolor_softGreen {
   border-color: #ffffff00;
@@ -22,14 +17,12 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   background: #adc178;
-  align-self: auto;
   cursor: pointer;
   border-radius: 6px;
-  padding: 9px 16px;
-  border-width: 0px;
-  border-style: none;
+  padding: 12px 20px;
+  border: 0px solid #dbdbd7;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .trigger {
@@ -51,6 +44,9 @@
   background: none;
 }
 .triggerisOpen {
+  background: #788c40;
+}
+.triggerisDisabled {
   background: #adc178;
 }
 .triggercolor_softBlue {
@@ -78,44 +74,13 @@
   border-color: #ffffff00;
 }
 .root:focus-within .trigger {
-  box-shadow: none;
   outline: none;
-  border-color: #adc178;
 }
 .root .trigger___focusVisibleWithin {
-  box-shadow: none;
   outline: none;
-  border-color: #adc178;
 }
-.root .trigger:active {
-  background: #e9e9e6;
-}
-.rootshowPlaceholder .triggershowPlaceholder:active {
+.root:active .trigger {
   background: #788c40;
-}
-.rootcolor_softPink .triggercolor_softPink:active {
-  background: #f9d8ec;
-}
-.rootcolor_softPurple .triggercolor_softPurple:active {
-  background: #eddbf9;
-}
-.rootcolor_softBlue .triggercolor_softBlue:active {
-  background: #cee7fe;
-}
-.rootcolor_softCyan .triggercolor_softCyan:active {
-  background: #c4eaef;
-}
-.rootcolor_softGreen .triggercolor_softGreen:active {
-  background: #ccebd7;
-}
-.rootcolor_softYellow .triggercolor_softYellow:active {
-  background: #fef2a4;
-}
-.rootcolor_softOrange .triggercolor_softOrange:active {
-  background: #ffdcc3;
-}
-.rootcolor_softRed .triggercolor_softRed:active {
-  background: #fdd8d3;
 }
 .contentContainer {
   display: flex;
@@ -131,8 +96,7 @@
 }
 .slotTargetSelectedContent {
   white-space: pre;
-  color: #ffffff;
-  text-align: center;
+  color: #f0ead2;
 }
 .slotTargetSelectedContent > .__wab_text,
 .slotTargetSelectedContent > .__wab_slot-string-wrapper,
@@ -254,37 +218,37 @@
   overflow: hidden;
 }
 .slotTargetPlaceholdershowPlaceholder {
-  color: #ffffff;
+  color: #f0ead2;
 }
-.slotTargetPlaceholdershowPlaceholder_color_softRed {
+.slotTargetPlaceholdercolor_softRed_showPlaceholder {
   color: #cd2b31;
 }
-.slotTargetPlaceholdershowPlaceholder_color_softPink {
+.slotTargetPlaceholdercolor_softPink_showPlaceholder {
   color: #cd1d8d;
 }
 .slotTargetPlaceholdercolor_softPurple_showPlaceholder {
   color: #793aaf;
 }
-.slotTargetPlaceholdershowPlaceholder_color_softBlue {
+.slotTargetPlaceholdercolor_softBlue_showPlaceholder {
   color: #006adc;
 }
-.slotTargetPlaceholdershowPlaceholder_color_softCyan {
+.slotTargetPlaceholdercolor_softCyan_showPlaceholder {
   color: #0c7792;
 }
-.slotTargetPlaceholdershowPlaceholder_color_softGreen {
+.slotTargetPlaceholdercolor_softGreen_showPlaceholder {
   color: #18794e;
 }
-.slotTargetPlaceholdershowPlaceholder_color_softYellow {
+.slotTargetPlaceholdercolor_softYellow_showPlaceholder {
   color: #946800;
 }
-.slotTargetPlaceholdershowPlaceholder_color_softOrange {
+.slotTargetPlaceholdercolor_softOrange_showPlaceholder {
   color: #bd4b00;
 }
 .dropdownIcon {
   position: relative;
   object-fit: cover;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   color: #f0ead2;
   flex-shrink: 0;
 }
@@ -323,7 +287,6 @@
   left: 0px;
   top: 100%;
   z-index: 1000;
-  display: none;
 }
 .optionsContainer {
   display: flex;
@@ -335,9 +298,9 @@
   height: auto;
   min-width: 0;
 }
-.option__zKWA:global(.__wab_instance) {
+.option__vB61:global(.__wab_instance) {
   position: relative;
 }
-.option__n1V6:global(.__wab_instance) {
+.option__xsCfY:global(.__wab_instance) {
   position: relative;
 }

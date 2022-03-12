@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C900&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C900&display=swap");
 
+.plasmic_tokens {
+  --token-ouNwx-vwK: #6c584c;
+  --plasmic-token-background: var(--token-ouNwx-vwK);
+  --token-BmdOwAxfZ: #a98467;
+  --plasmic-token-off-background: var(--token-BmdOwAxfZ);
+  --token-iph6VHXz0: #adc178;
+  --plasmic-token-button: var(--token-iph6VHXz0);
+  --token-21uHtMI8m: #dde5b6;
+  --plasmic-token-light-button: var(--token-21uHtMI8m);
+  --token-YhIPb0wKY: #f0ead2;
+  --plasmic-token-text: var(--token-YhIPb0wKY);
+  --token-YcpD_evUc: #788c40;
+  --plasmic-token-dark-button: var(--token-YcpD_evUc);
+}
+
 .plasmic_default_styles {
   --mixin-qhfdCWd1g7Mm_font-family: "Inter";
   --mixin-qhfdCWd1g7Mm_font-size: 16px;

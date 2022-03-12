@@ -31,8 +31,8 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import Select from "../../Select"; // plasmic-import: y4GUXOimSgD/component
-import Select__Option from "../../Select__Option"; // plasmic-import: ur6XKUNLcUO/component
+import Select from "../../Select"; // plasmic-import: OUgkoCY4UWb/component
+import Select__Option from "../../Select__Option"; // plasmic-import: _W7_Pd2itY2/component
 import Button from "../../Button"; // plasmic-import: w8fHD7P1kWE/component
 import WateredButton from "../../WateredButton"; // plasmic-import: G6yvhwbrKZO/component
 
@@ -46,6 +46,7 @@ import sty from "./PlasmicHomepage.module.css"; // plasmic-import: rjC68L8_vvXD/
 import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: L6R8sd5oTqa/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: CGRffNbaaHB/icon
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: eUq6eI3Zsph/icon
+import ChevronDownsvgIcon from "./icons/PlasmicIcon__ChevronDownsvg"; // plasmic-import: H0_XKBB6dKi/icon
 import EllipsessvgIcon from "./icons/PlasmicIcon__Ellipsessvg"; // plasmic-import: 8pQ2njHnaW/icon
 import image311As9DxzxSEb from "./images/image31.jpeg"; // plasmic-import: 1AS9DxzxS-eb/picture
 
@@ -62,8 +63,6 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   link?: p.Flex<"a">;
-  homeSelector?: p.Flex<typeof Select>;
-  homeSelector2?: p.Flex<typeof Select>;
   h1?: p.Flex<"h1">;
 };
 
@@ -101,6 +100,7 @@ function PlasmicHomepage__RenderFunc(props: {
             projectcss.all,
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
+            projectcss.plasmic_tokens,
             sty.root,
             "" as const
           )}
@@ -179,125 +179,83 @@ function PlasmicHomepage__RenderFunc(props: {
             <div className={classNames(projectcss.all, sty.columns__vhGnd)}>
               <div className={classNames(projectcss.all, sty.column___28Y0I)}>
                 <Select
-                  data-plasmic-name={"homeSelector"}
-                  data-plasmic-override={overrides.homeSelector}
-                  className={classNames("__wab_instance", sty.homeSelector)}
+                  className={classNames("__wab_instance", sty.select__rn0UW)}
                   placeholder={
-                    true ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__hnzzP
-                        )}
-                      >
-                        {"Homes"}
-                      </div>
-                    ) : null
-                  }
-                  selectedContent={
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text___795Vc
+                        sty.text__jBpiL
                       )}
                     >
-                      {"Selected"}
+                      {"Homes"}
                     </div>
                   }
-                >
-                  {true ? (
-                    <Select__Option
-                      className={classNames(
-                        "__wab_instance",
-                        sty.option__anaTp
-                      )}
-                      value={"value1" as const}
-                    >
-                      {"Option 1"}
-                    </Select__Option>
-                  ) : null}
-
-                  <Select__Option
-                    className={classNames("__wab_instance", sty.option__lfYf7)}
-                    value={"value2" as const}
-                  >
-                    {"Option 2"}
-                  </Select__Option>
-                </Select>
+                />
               </div>
 
               <div className={classNames(projectcss.all, sty.column___6Hvfj)}>
                 <Button
                   className={classNames("__wab_instance", sty.button__ypP9X)}
                 >
-                  {"Add Plant"}
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__vvehd
+                    )}
+                  >
+                    {"Add Plant"}
+                  </div>
                 </Button>
               </div>
 
               {true ? (
                 <div className={classNames(projectcss.all, sty.column__yZvrI)}>
                   <Select
-                    data-plasmic-name={"homeSelector2"}
-                    data-plasmic-override={overrides.homeSelector2}
-                    className={classNames("__wab_instance", sty.homeSelector2)}
-                    placeholder={
-                      true ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__gwGm4
-                          )}
-                        >
-                          {"Order by"}
-                        </div>
-                      ) : null
-                    }
-                    selectedContent={
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__xTb8S
-                        )}
-                      >
-                        {"Selected"}
-                      </div>
-                    }
-                  >
-                    {true ? (
-                      <Select__Option
-                        className={classNames(
-                          "__wab_instance",
-                          sty.option__iu7Ak
-                        )}
-                        value={"value1" as const}
-                      >
-                        {"Option 1"}
-                      </Select__Option>
-                    ) : null}
-
-                    <Select__Option
-                      className={classNames(
-                        "__wab_instance",
-                        sty.option__lfYf7
-                      )}
-                      value={"value2" as const}
-                    >
-                      {"Option 2"}
-                    </Select__Option>
-                  </Select>
+                    className={classNames("__wab_instance", sty.select__roUlf)}
+                    placeholder={"Order by"}
+                  />
                 </div>
               ) : null}
               {true ? (
                 <div className={classNames(projectcss.all, sty.column___9DAKl)}>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__sxGxh)}
+                  {true ? (
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__sxGxh
+                      )}
+                    >
+                      {"Filter"}
+                    </Button>
+                  ) : null}
+
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__fhJoZ)}
                   >
-                    {"Filter"}
-                  </Button>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___056Vr
+                      )}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__ohsEx
+                        )}
+                      >
+                        {"Filters"}
+                      </div>
+
+                      <ChevronDownsvgIcon
+                        className={classNames(projectcss.all, sty.svg__orupu)}
+                        role={"img"}
+                      />
+                    </div>
+                  </div>
                 </div>
               ) : null}
             </div>
@@ -650,7 +608,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 sty.h1
               )}
             >
-              {"Welcome to your first pages."}
+              {"Welcome to your first page."}
             </h1>
           ) : null}
           {true ? (
@@ -716,10 +674,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link", "homeSelector", "homeSelector2", "h1"],
+  root: ["root", "link", "h1"],
   link: ["link"],
-  homeSelector: ["homeSelector"],
-  homeSelector2: ["homeSelector2"],
   h1: ["h1"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -728,8 +684,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   link: "a";
-  homeSelector: typeof Select;
-  homeSelector2: typeof Select;
   h1: "h1";
 };
 
@@ -791,8 +745,6 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     link: makeNodeComponent("link"),
-    homeSelector: makeNodeComponent("homeSelector"),
-    homeSelector2: makeNodeComponent("homeSelector2"),
     h1: makeNodeComponent("h1"),
 
     // Metadata about props expected for PlasmicHomepage
