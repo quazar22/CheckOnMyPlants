@@ -844,43 +844,42 @@ function PlasmicHomepage__RenderFunc(props: {
 
                 <div className={classNames(projectcss.all, sty.columns__bkBBw)}>
                   <div
-                    className={classNames(projectcss.all, sty.column__xawcp)}
-                  >
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button__qRyXs
-                      )}
-                    >
-                      {"Prev"}
-                    </Button>
-                  </div>
-
-                  <div
                     className={classNames(projectcss.all, sty.column__dgwcb)}
                   >
                     <div
                       className={classNames(
                         projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__rmtw8
+                        sty.freeBox___5Ynqk
                       )}
                     >
-                      {"1 of 5"}
-                    </div>
-                  </div>
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button__g2Eod
+                        )}
+                      >
+                        {"Prev"}
+                      </Button>
 
-                  <div
-                    className={classNames(projectcss.all, sty.column___6PuX6)}
-                  >
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button___4I2J0
-                      )}
-                    >
-                      {"Next"}
-                    </Button>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__vNJig
+                        )}
+                      >
+                        {"1 of 5"}
+                      </div>
+
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button__noLgY
+                        )}
+                      >
+                        {"Next"}
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>
