@@ -36,6 +36,7 @@ import Select from "../../Select"; // plasmic-import: OUgkoCY4UWb/component
 import Select__Option from "../../Select__Option"; // plasmic-import: _W7_Pd2itY2/component
 import TextInput from "../../TextInput"; // plasmic-import: fOYyky75Wg3/component
 import WateredButton from "../../WateredButton"; // plasmic-import: G6yvhwbrKZO/component
+import WateringHistoryRow from "../../WateringHistoryRow"; // plasmic-import: OlsJy9nRtl/component
 
 import { useScreenVariants as useScreenVariantsaxx2E0C3R4WD } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: AXX-2e0C3R4wD/globalVariant
 
@@ -104,6 +105,7 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root,
             "" as const
           )}
+          onClick={"" as const}
         >
           {true ? (
             <p.Stack
@@ -483,7 +485,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           ? ("100%" as const)
                           : ("100%" as const)
                       }
-                      displayMaxHeight={"7vh" as const}
+                      displayMaxHeight={"none" as const}
                       displayMaxWidth={"100%" as const}
                       displayMinHeight={"0" as const}
                       displayMinWidth={"0" as const}
@@ -515,6 +517,16 @@ function PlasmicHomepage__RenderFunc(props: {
                           )}
                         >
                           {"Plant #1"}
+                        </div>
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___6PsP0
+                          )}
+                        >
+                          {"Kitchen Window"}
                         </div>
                       </div>
 
@@ -649,21 +661,34 @@ function PlasmicHomepage__RenderFunc(props: {
                   <div
                     className={classNames(projectcss.all, sty.column__ouaHd)}
                   >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__xb43Z
-                      )}
-                    >
-                      {"Home"}
-                    </div>
+                    {true ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__xb43Z
+                        )}
+                      >
+                        {"Home"}
+                      </div>
+                    ) : null}
 
                     <Select
                       className={classNames(
                         "__wab_instance",
                         sty.select___2Ler4
                       )}
+                      placeholder={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__lRbzo
+                          )}
+                        >
+                          {"Select…"}
+                        </div>
+                      }
                     />
                   </div>
 
@@ -699,20 +724,26 @@ function PlasmicHomepage__RenderFunc(props: {
                   <div
                     className={classNames(projectcss.all, sty.column__t5Afj)}
                   >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__ezF93
-                      )}
-                    >
-                      {"Home"}
-                    </div>
+                    {(
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__zlzSv
+                        )}
+                      >
+                        {"Location"}
+                      </div>
+                    ) : null}
 
-                    <Select
+                    <TextInput
                       className={classNames(
                         "__wab_instance",
-                        sty.select__wWakz
+                        sty.textInput__v4CCb
                       )}
                     />
                   </div>
@@ -727,6 +758,128 @@ function PlasmicHomepage__RenderFunc(props: {
                       )}
                     >
                       {"Update"}
+                    </Button>
+                  </div>
+                </div>
+
+                <div
+                  className={classNames(projectcss.all, sty.freeBox__wjxnN)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.columns___7KkRj)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.column__owNFt)}
+                  >
+                    <Select
+                      className={classNames(
+                        "__wab_instance",
+                        sty.select__cmFmW
+                      )}
+                      placeholder={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__x2412
+                          )}
+                        >
+                          {"Show 5"}
+                        </div>
+                      }
+                    />
+                  </div>
+
+                  <div className={classNames(projectcss.all, sty.column__wmHq)}>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___5WKdK
+                      )}
+                    >
+                      {"History"}
+                    </div>
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.column__iLpwt)}
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__hWCt8
+                      )}
+                    >
+                      {"Add"}
+                    </Button>
+                  </div>
+                </div>
+
+                <div className={classNames(projectcss.all, sty.freeBox__wWc5W)}>
+                  <WateringHistoryRow
+                    className={classNames(
+                      "__wab_instance",
+                      sty.wateringHistoryRow__cesT8
+                    )}
+                  />
+
+                  <WateringHistoryRow
+                    className={classNames(
+                      "__wab_instance",
+                      sty.wateringHistoryRow__uY2WV
+                    )}
+                    onTime={"2d late"}
+                  />
+
+                  <WateringHistoryRow
+                    className={classNames(
+                      "__wab_instance",
+                      sty.wateringHistoryRow__lGo2L
+                    )}
+                    onTime={"1d early"}
+                  />
+                </div>
+
+                <div className={classNames(projectcss.all, sty.columns__bkBBw)}>
+                  <div
+                    className={classNames(projectcss.all, sty.column__xawcp)}
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__qRyXs
+                      )}
+                    >
+                      {"Prev"}
+                    </Button>
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.column__dgwcb)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__rmtw8
+                      )}
+                    >
+                      {"1 of 5"}
+                    </div>
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.column___6PuX6)}
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button___4I2J0
+                      )}
+                    >
+                      {"Next"}
                     </Button>
                   </div>
                 </div>

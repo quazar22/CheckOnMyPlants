@@ -138,6 +138,19 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "text-input"
+        },
+        {
+          "id": "OlsJy9nRtl",
+          "name": "WateringHistoryRow",
+          "type": "managed",
+          "projectId": "g4U16ChXxiyY9kzMDaGd3y",
+          "renderModuleFilePath": "plasmic/check_on_my_plants/PlasmicWateringHistoryRow.tsx",
+          "importSpec": {
+            "modulePath": "WateringHistoryRow.tsx"
+          },
+          "cssFilePath": "plasmic/check_on_my_plants/PlasmicWateringHistoryRow.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -245,6 +258,16 @@
           "id": "KrfpdSyIW3p",
           "name": "SearchsvgIcon",
           "moduleFilePath": "plasmic/check_on_my_plants/icons/PlasmicIcon__Searchsvg.tsx"
+        },
+        {
+          "id": "I5Uuud2Pld",
+          "name": "Trashsvg2Icon",
+          "moduleFilePath": "plasmic/check_on_my_plants/icons/PlasmicIcon__Trashsvg2.tsx"
+        },
+        {
+          "id": "PrFWNTpFKG",
+          "name": "PlussvgIcon",
+          "moduleFilePath": "plasmic/check_on_my_plants/icons/PlasmicIcon__Plussvg.tsx"
         }
       ],
       "images": [
@@ -417,6 +440,11 @@
           "id": "OWqx05q52UxF",
           "name": "image 33",
           "filePath": "plasmic/check_on_my_plants/images/image33.jpeg"
+        },
+        {
+          "id": "iB-guZKek",
+          "name": "trash.svg",
+          "filePath": "plasmic/check_on_my_plants/images/trashsvg.svg"
         }
       ],
       "indirect": false,
