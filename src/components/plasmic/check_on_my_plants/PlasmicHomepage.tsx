@@ -31,9 +31,10 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import Button from "../../Button"; // plasmic-import: w8fHD7P1kWE/component
 import Select from "../../Select"; // plasmic-import: OUgkoCY4UWb/component
 import Select__Option from "../../Select__Option"; // plasmic-import: _W7_Pd2itY2/component
-import Button from "../../Button"; // plasmic-import: w8fHD7P1kWE/component
+import TextInput from "../../TextInput"; // plasmic-import: fOYyky75Wg3/component
 import WateredButton from "../../WateredButton"; // plasmic-import: G6yvhwbrKZO/component
 
 import { useScreenVariants as useScreenVariantsaxx2E0C3R4WD } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: AXX-2e0C3R4wD/globalVariant
@@ -43,10 +44,9 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_check_on_my_plants.module.css"; // plasmic-import: g4U16ChXxiyY9kzMDaGd3y/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: rjC68L8_vvXD/css
 
-import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: L6R8sd5oTqa/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: CGRffNbaaHB/icon
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: eUq6eI3Zsph/icon
-import ChevronDownsvgIcon from "./icons/PlasmicIcon__ChevronDownsvg"; // plasmic-import: H0_XKBB6dKi/icon
+import SearchsvgIcon from "./icons/PlasmicIcon__Searchsvg"; // plasmic-import: KrfpdSyIW3p/icon
 import EllipsessvgIcon from "./icons/PlasmicIcon__Ellipsessvg"; // plasmic-import: 8pQ2njHnaW/icon
 import image311As9DxzxSEb from "./images/image31.jpeg"; // plasmic-import: 1AS9DxzxS-eb/picture
 
@@ -62,7 +62,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
-  link?: p.Flex<"a">;
+  accountButton?: p.Flex<typeof Button>;
   h1?: p.Flex<"h1">;
 };
 
@@ -132,44 +132,17 @@ function PlasmicHomepage__RenderFunc(props: {
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__osHx)}
                   >
-                    <p.Stack
-                      as={"a"}
-                      data-plasmic-name={"link"}
-                      data-plasmic-override={overrides.link}
-                      hasGap={true}
+                    <Button
+                      data-plasmic-name={"accountButton"}
+                      data-plasmic-override={overrides.accountButton}
                       className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link
+                        "__wab_instance",
+                        sty.accountButton
                       )}
+                      waterButton={true}
                     >
-                      {false ? (
-                        <Icon4Icon
-                          className={classNames(
-                            projectcss.all,
-                            sty.svg___9ZLlW
-                          )}
-                          role={"img"}
-                        />
-                      ) : null}
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__l93Bn
-                        )}
-                      >
-                        {"Account"}
-                      </div>
-
-                      {false ? (
-                        <Icon4Icon
-                          className={classNames(projectcss.all, sty.svg__ioThd)}
-                          role={"img"}
-                        />
-                      ) : null}
-                    </p.Stack>
+                      {"Account"}
+                    </Button>
                   </p.Stack>
                 </p.Stack>
               ) : null}
@@ -218,161 +191,57 @@ function PlasmicHomepage__RenderFunc(props: {
                   />
                 </div>
               ) : null}
-              {true ? (
-                <div className={classNames(projectcss.all, sty.column___9DAKl)}>
-                  {true ? (
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button__sxGxh
-                      )}
-                    >
-                      {"Filter"}
-                    </Button>
-                  ) : null}
 
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__fhJoZ)}
+              <div className={classNames(projectcss.all, sty.column__uxuGs)}>
+                {true ? (
+                  <Button
+                    className={classNames("__wab_instance", sty.button__sxGxh)}
                   >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        sty.freeBox___056Vr
-                      )}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__ohsEx
-                        )}
-                      >
-                        {"Filters"}
-                      </div>
-
-                      <ChevronDownsvgIcon
-                        className={classNames(projectcss.all, sty.svg__orupu)}
-                        role={"img"}
-                      />
-                    </div>
-                  </div>
-                </div>
-              ) : null}
+                    {"Filter"}
+                  </Button>
+                ) : null}
+              </div>
             </div>
           ) : null}
 
-          <div className={classNames(projectcss.all, sty.freeBox__l8Ik)}>
-            {true ? (
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.columns__zZvUe)}
+          <div className={classNames(projectcss.all, sty.columns___6OAd1)}>
+            <div className={classNames(projectcss.all, sty.column___9D9I0)}>
+              <TextInput
+                className={classNames("__wab_instance", sty.textInput___0R3Z7)}
+                showStartIcon={true}
+              />
+            </div>
+
+            <div className={classNames(projectcss.all, sty.column__lJd9W)}>
+              <TextInput
+                className={classNames("__wab_instance", sty.textInput__yjMyj)}
+                placeholder={"Frequency" as const}
+                showStartIcon={true}
+              />
+            </div>
+
+            <div className={classNames(projectcss.all, sty.column__hqwmm)}>
+              <TextInput
+                className={classNames("__wab_instance", sty.textInput__tx4X)}
+                placeholder={"Left" as const}
+                showStartIcon={true}
+              />
+            </div>
+
+            <div className={classNames(projectcss.all, sty.column__asqZf)} />
+
+            <div className={classNames(projectcss.all, sty.column___8ZHi)} />
+
+            <div className={classNames(projectcss.all, sty.column__g0OXe)}>
+              <Button
+                className={classNames("__wab_instance", sty.button__iwuxO)}
               >
-                <div className={classNames(projectcss.all, sty.column__q8HQx)}>
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img___1G0Kl)}
-                    displayHeight={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? ("100%" as const)
-                        : ("100%" as const)
-                    }
-                    displayMaxHeight={"7vh" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"100%" as const}
-                    loading={"lazy" as const}
-                    src={{
-                      src: image311As9DxzxSEb,
-                      fullWidth: 1280,
-                      fullHeight: 853,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </div>
+                {"Apply Filter"}
+              </Button>
+            </div>
+          </div>
 
-                <div className={classNames(projectcss.all, sty.column__fwXy8)}>
-                  <div
-                    className={classNames(projectcss.all, sty.columns__jrEuV)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.column__wYcn)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__vFp9O
-                        )}
-                      >
-                        {"Plant #1"}
-                      </div>
-                    </div>
-
-                    {(
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? true
-                        : true
-                    ) ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__fssmh
-                        )}
-                      >
-                        {(
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? true
-                            : true
-                        ) ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text___0XgJh
-                            )}
-                          >
-                            {"Every 22 days"}
-                          </div>
-                        ) : null}
-                        {(
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? true
-                            : true
-                        ) ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__f2T4K
-                            )}
-                          >
-                            {"4 days left"}
-                          </div>
-                        ) : null}
-                      </div>
-                    ) : null}
-                  </div>
-                </div>
-
-                <div className={classNames(projectcss.all, sty.column__jtbHs)}>
-                  <WateredButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.wateredButton__j1LZw
-                    )}
-                  />
-                </div>
-
-                <div className={classNames(projectcss.all, sty.column__fuQOb)}>
-                  <EllipsessvgIcon
-                    className={classNames(projectcss.all, sty.svg___2Ns0Q)}
-                    role={"img"}
-                  />
-                </div>
-              </p.Stack>
-            ) : null}
+          <div className={classNames(projectcss.all, sty.freeBox__l8Ik)}>
             {true ? (
               <p.Stack
                 as={"div"}
@@ -595,6 +464,128 @@ function PlasmicHomepage__RenderFunc(props: {
                 </div>
               </p.Stack>
             ) : null}
+
+            <div className={classNames(projectcss.all, sty.freeBox__f3Koa)}>
+              {true ? (
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.columns__zZvUe)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.column__q8HQx)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img___1G0Kl)}
+                      displayHeight={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("100%" as const)
+                          : ("100%" as const)
+                      }
+                      displayMaxHeight={"7vh" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"100%" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: image311As9DxzxSEb,
+                        fullWidth: 1280,
+                        fullHeight: 853,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.column__fwXy8)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.columns__jrEuV)}
+                    >
+                      <div
+                        className={classNames(projectcss.all, sty.column__wYcn)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__vFp9O
+                          )}
+                        >
+                          {"Plant #1"}
+                        </div>
+                      </div>
+
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.column__fssmh
+                          )}
+                        >
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text___0XgJh
+                              )}
+                            >
+                              {"Every 22 days"}
+                            </div>
+                          ) : null}
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__f2T4K
+                              )}
+                            >
+                              {"4 days left"}
+                            </div>
+                          ) : null}
+                        </div>
+                      ) : null}
+                    </div>
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.column__jtbHs)}
+                  >
+                    <WateredButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.wateredButton__j1LZw
+                      )}
+                    />
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.column__fuQOb)}
+                  >
+                    <EllipsessvgIcon
+                      className={classNames(projectcss.all, sty.svg___2Ns0Q)}
+                      role={"img"}
+                    />
+                  </div>
+                </p.Stack>
+              ) : null}
+            </div>
           </div>
 
           {true ? (
@@ -674,8 +665,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link", "h1"],
-  link: ["link"],
+  root: ["root", "accountButton", "h1"],
+  accountButton: ["accountButton"],
   h1: ["h1"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -683,7 +674,7 @@ type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  link: "a";
+  accountButton: typeof Button;
   h1: "h1";
 };
 
@@ -744,7 +735,7 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    link: makeNodeComponent("link"),
+    accountButton: makeNodeComponent("accountButton"),
     h1: makeNodeComponent("h1"),
 
     // Metadata about props expected for PlasmicHomepage

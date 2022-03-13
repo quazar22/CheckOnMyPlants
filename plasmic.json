@@ -124,6 +124,20 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "triggered-overlay"
+        },
+        {
+          "id": "fOYyky75Wg3",
+          "name": "TextInput",
+          "type": "managed",
+          "projectId": "g4U16ChXxiyY9kzMDaGd3y",
+          "renderModuleFilePath": "plasmic/check_on_my_plants/PlasmicTextInput.tsx",
+          "importSpec": {
+            "modulePath": "TextInput.tsx"
+          },
+          "cssFilePath": "plasmic/check_on_my_plants/PlasmicTextInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
         }
       ],
       "icons": [
@@ -226,6 +240,11 @@
           "id": "8pQ2njHnaW",
           "name": "EllipsessvgIcon",
           "moduleFilePath": "plasmic/check_on_my_plants/icons/PlasmicIcon__Ellipsessvg.tsx"
+        },
+        {
+          "id": "KrfpdSyIW3p",
+          "name": "SearchsvgIcon",
+          "moduleFilePath": "plasmic/check_on_my_plants/icons/PlasmicIcon__Searchsvg.tsx"
         }
       ],
       "images": [
@@ -541,7 +560,8 @@
           "name": "Tabs",
           "componentImportPath": "@plasmicpkgs/antd"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

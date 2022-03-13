@@ -114,7 +114,7 @@ export const PlasmicButton__ArgProps = new Array<ArgPropType>(
 );
 
 export type PlasmicButton__OverridesType = {
-  root?: p.Flex<"button">;
+  root2?: p.Flex<"button">;
   startIconContainer?: p.Flex<"div">;
   contentContainer?: p.Flex<"div">;
   endIconContainer?: p.Flex<"div">;
@@ -150,20 +150,20 @@ function PlasmicButton__RenderFunc(props: {
 }) {
   const { variants, args, overrides, forNode } = props;
 
-  const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
+  const [isRoot2FocusVisibleWithin, triggerRoot2FocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
       isTextInput: false
     });
 
   const triggers = {
-    focusVisibleWithin_root: isRootFocusVisibleWithin
+    focusVisibleWithin_root2: isRoot2FocusVisibleWithin
   };
 
   return (
     <p.Stack
       as={"button"}
-      data-plasmic-name={"root"}
-      data-plasmic-override={overrides.root}
+      data-plasmic-name={"root2"}
+      data-plasmic-override={overrides.root2}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
@@ -173,79 +173,83 @@ function PlasmicButton__RenderFunc(props: {
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_tokens,
-        sty.root,
+        sty.root2,
         {
-          [sty.root___focusVisibleWithin]: triggers.focusVisibleWithin_root,
-          [sty.rootcolor_blue]: hasVariant(variants, "color", "blue"),
-          [sty.rootcolor_clear]: hasVariant(variants, "color", "clear"),
-          [sty.rootcolor_green]: hasVariant(variants, "color", "green"),
-          [sty.rootcolor_link]: hasVariant(variants, "color", "link"),
-          [sty.rootcolor_link_size_minimal]:
+          [sty.root2___focusVisibleWithin]: triggers.focusVisibleWithin_root2,
+          [sty.root2color_blue]: hasVariant(variants, "color", "blue"),
+          [sty.root2color_clear]: hasVariant(variants, "color", "clear"),
+          [sty.root2color_green]: hasVariant(variants, "color", "green"),
+          [sty.root2color_link]: hasVariant(variants, "color", "link"),
+          [sty.root2color_link_size_minimal]:
             hasVariant(variants, "color", "link") &&
             hasVariant(variants, "size", "minimal"),
-          [sty.rootcolor_red]: hasVariant(variants, "color", "red"),
-          [sty.rootcolor_sand]: hasVariant(variants, "color", "sand"),
-          [sty.rootcolor_softBlue]: hasVariant(variants, "color", "softBlue"),
-          [sty.rootcolor_softGreen]: hasVariant(variants, "color", "softGreen"),
-          [sty.rootcolor_softRed]: hasVariant(variants, "color", "softRed"),
-          [sty.rootcolor_softSand]: hasVariant(variants, "color", "softSand"),
-          [sty.rootcolor_softYellow]: hasVariant(
+          [sty.root2color_red]: hasVariant(variants, "color", "red"),
+          [sty.root2color_sand]: hasVariant(variants, "color", "sand"),
+          [sty.root2color_softBlue]: hasVariant(variants, "color", "softBlue"),
+          [sty.root2color_softGreen]: hasVariant(
+            variants,
+            "color",
+            "softGreen"
+          ),
+          [sty.root2color_softRed]: hasVariant(variants, "color", "softRed"),
+          [sty.root2color_softSand]: hasVariant(variants, "color", "softSand"),
+          [sty.root2color_softYellow]: hasVariant(
             variants,
             "color",
             "softYellow"
           ),
-          [sty.rootcolor_white]: hasVariant(variants, "color", "white"),
-          [sty.rootcolor_yellow]: hasVariant(variants, "color", "yellow"),
-          [sty.rootisDisabled]: hasVariant(
+          [sty.root2color_white]: hasVariant(variants, "color", "white"),
+          [sty.root2color_yellow]: hasVariant(variants, "color", "yellow"),
+          [sty.root2isDisabled]: hasVariant(
             variants,
             "isDisabled",
             "isDisabled"
           ),
-          [sty.rootshape_round]: hasVariant(variants, "shape", "round"),
-          [sty.rootshape_round_size_compact]:
+          [sty.root2shape_round]: hasVariant(variants, "shape", "round"),
+          [sty.root2shape_round_size_compact]:
             hasVariant(variants, "shape", "round") &&
             hasVariant(variants, "size", "compact"),
-          [sty.rootshape_rounded]: hasVariant(variants, "shape", "rounded"),
-          [sty.rootshape_rounded_showEndIcon]:
+          [sty.root2shape_rounded]: hasVariant(variants, "shape", "rounded"),
+          [sty.root2shape_rounded_showEndIcon]:
             hasVariant(variants, "showEndIcon", "showEndIcon") &&
             hasVariant(variants, "shape", "rounded"),
-          [sty.rootshape_rounded_showStartIcon]:
+          [sty.root2shape_rounded_showStartIcon]:
             hasVariant(variants, "shape", "rounded") &&
             hasVariant(variants, "showStartIcon", "showStartIcon"),
-          [sty.rootshape_rounded_size_compact]:
+          [sty.root2shape_rounded_size_compact]:
             hasVariant(variants, "size", "compact") &&
             hasVariant(variants, "shape", "rounded"),
-          [sty.rootshape_sharp]: hasVariant(variants, "shape", "sharp"),
-          [sty.rootshowEndIcon]: hasVariant(
+          [sty.root2shape_sharp]: hasVariant(variants, "shape", "sharp"),
+          [sty.root2showEndIcon]: hasVariant(
             variants,
             "showEndIcon",
             "showEndIcon"
           ),
-          [sty.rootshowEndIcon_size_compact]:
+          [sty.root2showEndIcon_size_compact]:
             hasVariant(variants, "size", "compact") &&
             hasVariant(variants, "showEndIcon", "showEndIcon"),
-          [sty.rootshowEndIcon_size_compact_showStartIcon]:
+          [sty.root2showEndIcon_size_compact_showStartIcon]:
             hasVariant(variants, "size", "compact") &&
             hasVariant(variants, "showStartIcon", "showStartIcon") &&
             hasVariant(variants, "showEndIcon", "showEndIcon"),
-          [sty.rootshowStartIcon]: hasVariant(
+          [sty.root2showStartIcon]: hasVariant(
             variants,
             "showStartIcon",
             "showStartIcon"
           ),
-          [sty.rootsize_compact]: hasVariant(variants, "size", "compact"),
-          [sty.rootsize_compact_showStartIcon]:
+          [sty.root2size_compact]: hasVariant(variants, "size", "compact"),
+          [sty.root2size_compact_showStartIcon]:
             hasVariant(variants, "size", "compact") &&
             hasVariant(variants, "showStartIcon", "showStartIcon"),
-          [sty.rootsize_minimal]: hasVariant(variants, "size", "minimal"),
-          [sty.rootwaterButton]: hasVariant(
+          [sty.root2size_minimal]: hasVariant(variants, "size", "minimal"),
+          [sty.root2waterButton]: hasVariant(
             variants,
             "waterButton",
             "waterButton"
           )
         }
       )}
-      data-plasmic-trigger-props={[triggerRootFocusVisibleWithinProps]}
+      data-plasmic-trigger-props={[triggerRoot2FocusVisibleWithinProps]}
     >
       {(
         hasVariant(variants, "showStartIcon", "showStartIcon") ? true : false
@@ -344,7 +348,7 @@ function PlasmicButton__RenderFunc(props: {
         data-plasmic-override={overrides.contentContainer}
         className={classNames(projectcss.all, sty.contentContainer, {
           [sty.contentContainer___focusVisibleWithin]:
-            triggers.focusVisibleWithin_root,
+            triggers.focusVisibleWithin_root2,
           [sty.contentContainerisDisabled]: hasVariant(
             variants,
             "isDisabled",
@@ -367,7 +371,7 @@ function PlasmicButton__RenderFunc(props: {
           value: args.children,
           className: classNames(sty.slotTargetChildren, {
             [sty.slotTargetChildren___focusVisibleWithin]:
-              triggers.focusVisibleWithin_root,
+              triggers.focusVisibleWithin_root2,
             [sty.slotTargetChildrencolor_blue]: hasVariant(
               variants,
               "color",
@@ -587,7 +591,12 @@ function useBehavior<P extends pp.BaseButtonProps>(
 }
 
 const PlasmicDescendants = {
-  root: ["root", "startIconContainer", "contentContainer", "endIconContainer"],
+  root2: [
+    "root2",
+    "startIconContainer",
+    "contentContainer",
+    "endIconContainer"
+  ],
   startIconContainer: ["startIconContainer"],
   contentContainer: ["contentContainer"],
   endIconContainer: ["endIconContainer"]
@@ -596,7 +605,7 @@ type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
-  root: "button";
+  root2: "button";
   startIconContainer: "div";
   contentContainer: "div";
   endIconContainer: "div";
@@ -646,7 +655,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       forNode: nodeName
     });
   };
-  if (nodeName === "root") {
+  if (nodeName === "root2") {
     func.displayName = "PlasmicButton";
   } else {
     func.displayName = `PlasmicButton.${nodeName}`;
@@ -656,7 +665,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicButton = Object.assign(
   // Top-level PlasmicButton renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent("root2"),
   {
     // Helper components rendering sub-elements
     startIconContainer: makeNodeComponent("startIconContainer"),
